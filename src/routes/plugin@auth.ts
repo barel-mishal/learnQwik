@@ -9,7 +9,8 @@ export const { onRequest, useAuthSession, useAuthSignin, useAuthSignout } = serv
     providers: [
       GitHub({
         clientId: env.get('GITHUB_ID')!,
-        clientSecret: env.get('GITHUB_SECRET')!,
+        clientSecret: env.get('QWIK_GITHUB_SECRET')!,
+        
       }),
     ] as Provider[],
   })
